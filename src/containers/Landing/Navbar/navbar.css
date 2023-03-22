@@ -1,0 +1,71 @@
+.navbar {
+  background: #afaffcb5;
+  width: 100%;
+  height: 60px;
+  border-end-end-radius: 25px;
+  border-end-start-radius: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px -5px 25px 10px #717472dd;
+  /* box-shadow: 50px 20px 100px ; */
+}
+
+.toggle {
+  background-color: rgba(240, 234, 234, 0.914);
+}
+
+.navLink-wrapper {
+  padding-left: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.navLink {
+  margin-right: 10px;
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+  /* cursor: default; */
+}
+
+.navLink:hover {
+  margin-right: 10px;
+  font-weight: 700;
+  color: black;
+}
+
+.sigin-in-btn {
+  margin-right: 30px;
+  color: black;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  font-size: 15px;
+  background-color: #e9e9fe;
+  font-weight: 500;
+  border-radius: 20px;
+  height: 35px;
+  padding-inline: 15px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.371);
+  cursor: default;
+}
+
+.sigin-in-btn:hover {
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+}
+
+.center {
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 50px;
+  width: 80px; */
+}

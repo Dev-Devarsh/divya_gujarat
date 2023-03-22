@@ -1,0 +1,28 @@
+@import "./helper.scss";
+@import "./font.scss";
+@import "./variable.scss";
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+@import "antd/dist/antd.css";
+
+body {
+  margin: 0;
+  padding: 0 !important;
+  line-height: 1.3 !important;
+  font-family: "Barlow", sans-serif;
+  color: #000000 !important;
+  background: #e8f9fe !important;
+  overflow-x: hidden !important;
+}
+.ant-modal-content {
+    width: 750px !important;
+    background-color: #000000 !important;
+  }
+.ant-modal-header{
+  background-color: #000000 !important;
+}
+.ant-modal-title{
+  color: white;
+}
+.ant-modal-close-x{
+  color: white;
+}

@@ -1,0 +1,75 @@
+{
+	// Place your divya_gujarat workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	"div": {
+		"scope": "javascript,typescript,html,jsx",
+		"prefix": "div",
+		"body": [
+			"<div className= \"\"> $2 </div>",
+		],
+		"description": "div tag"
+	},
+	"h1": {
+		"scope": "javascript,typescript,html,jsx",
+		"prefix": "h1",
+		"body": [
+			"<h1 className= \"\"> $1 </h1>",
+		],
+		"description": "h1 tag"
+	},
+	"h2": {
+		"scope": "javascript,typescript,html,jsx",
+		"prefix": "h2",
+		"body": [
+			"<h2 className= \"\"> $2 </h2>",
+		],
+		"description": "h2 tag"
+	},
+	"h3": {
+		"scope": "javascript,typescript,html,jsx",
+		"prefix": "h1",
+		"body": [
+			"<h1 className= \"\"> $1 </h1>",
+		],
+		"description": "h3 tag"
+	},
+	"h4": {
+		"scope": "javascript,typescript,html,jsx",
+		"prefix": "h1",
+		"body": [
+			"<h4 className= \"\"> $1 </h1>",
+		],
+		"description": "h1 tag"
+	},
+	"h5": {
+		"scope": "javascript,typescript,html,jsx",
+		"prefix": "h5",
+		"body": [
+			"<h5 className= \"\"> $1 </h5>",
+		],
+		"description": "h5 tag"
+	},
+	"h6": {
+		"scope": "javascript,typescript,html,jsx",
+		"prefix": "h6",
+		"body": [
+			"<h6 className= \"\"> $1 </h6>",
+		],
+		"description": "h6 tag"
+	},
+	"h7": {
+		"scope": "javascript,typescript,html,jsx",
+		"prefix": "h7",
+		"body": [
+			"<h7 className= \"\"> $1 </h7>",
+		],
+		"description": "h7 tag"
+	},
+
+
+}
