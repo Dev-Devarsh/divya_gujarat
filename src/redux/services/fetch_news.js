@@ -11,16 +11,9 @@ export function fetchProducts() {
     return async function fetchProductsThunks(dispatch, getState) {
         dispatch(setStatus(STATUS.LOADING))
         try {
-            const res = await fetch('https://newsapi.org/v2/everything?q=tesla&apiKey=bdd208e2d66040ea8cb4be83ccbc90d7',
-                {
-                    method: 'GET',
-                }
-            );
+            const res = await fetch('https://newsapi.org/v2/everything?q=tesla&apiKey=bdd208e2d66040ea8cb4be83ccbc90d7');
             const data = await res.json();
             dispatch(setNews(data));
-            for (let index = 0; index < data.articles.length; index++) {
-                console.log(`obj ${data.articles[index].title}`);
-            }
             dispatch(setStatus(STATUS.IDLE))
 
         } catch (error) {

@@ -8,9 +8,9 @@ export const STATUS = Object.freeze({
 });
 
 const newsSlice = createSlice({
-    name: 'cart',
+    name: 'newsData',
     initialState: {
-        'data': {}, // dife thr type you response will have here we have {Map} so i assigned  
+        'data': {}, // difine the type you response will have here we have {Map} so i assigned  
         'status': STATUS.IDLE
     },
     // reducers are function (pure function) with the help of the reducer we mutate or change state
