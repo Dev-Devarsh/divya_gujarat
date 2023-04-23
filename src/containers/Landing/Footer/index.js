@@ -10,7 +10,7 @@ import youTube from "../../../asset/images/youtube.png"
 
 
 const Footer = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const { isMobile, isTablet } = useDevice();
 
   return (
