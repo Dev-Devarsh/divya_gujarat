@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/divya_gujarat/static/css/main.2cc3d689.css",
-    "main.js": "/divya_gujarat/static/js/main.5b57ee36.js",
-    "static/media/instagram.png": "/divya_gujarat/static/media/instagram.a27393b85a348afb38a7.png",
-    "static/media/youtube.png": "/divya_gujarat/static/media/youtube.d314ef386558f44fa403.png",
-    "static/media/logo.svg": "/divya_gujarat/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/divya_gujarat/index.html",
-    "main.2cc3d689.css.map": "/divya_gujarat/static/css/main.2cc3d689.css.map",
-    "main.5b57ee36.js.map": "/divya_gujarat/static/js/main.5b57ee36.js.map"
+    "main.css": "/static/css/main.2cc3d689.css",
+    "main.js": "/static/js/main.d37b4da9.js",
+    "static/media/instagram.png": "/static/media/instagram.a27393b85a348afb38a7.png",
+    "static/media/youtube.png": "/static/media/youtube.d314ef386558f44fa403.png",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.2cc3d689.css.map": "/static/css/main.2cc3d689.css.map",
+    "main.d37b4da9.js.map": "/static/js/main.d37b4da9.js.map"
   },
   "entrypoints": [
     "static/css/main.2cc3d689.css",
-    "static/js/main.5b57ee36.js"
+    "static/js/main.d37b4da9.js"
   ]
 }
