@@ -1,16 +1,16 @@
-import React from 'react';
 import Navbar from "./Navbar/index";
 import Footer from "./Footer/index";
-import Loader from '../spinner/spinner';
 import News from './newsCard/news_card';
+import './landing.css';
+import GAds from "../ad/ad";
 
 const index = () => {
   return (
-    <div className="">
+    <div >
       <Navbar />
-      {/* <Loader /> */}
       <News />
       <Footer />
+      {/* <GAds/> */}
     </div>
   )
 }

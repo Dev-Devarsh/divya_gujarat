@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 // import { Dropdown, Menu, Row, Col } from "antd";
 // import { AiFillCaretDown } from "react-icons/ai";
@@ -17,14 +16,14 @@ const Navbar = () => {
     navigate("/cart");
   }
 
-  const handleToggle = (isToggled) => {
-    console.log(`isToggled ${isToggled}`);
-    if (isToggled) {
+  // const handleToggle = (isToggled: boolean) => {
+  //   console.log(`isToggled ${isToggled}`);
+  //   if (isToggled) {
 
-    } else {
+  //   } else {
 
-    }
-  };
+  //   }
+  // };
   return (
     <div className="navbar">
       {/* <div className="navbar"> <Hamburger size={22} direction="right" onToggle={handleToggle} /> </div> */}

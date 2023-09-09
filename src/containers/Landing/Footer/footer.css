@@ -1,5 +1,5 @@
 .footer-wapper-web {
-	bottom:0;
+	position: absolute;
 	height: 15%;
 	width: 100%;
 	padding-top: 30px;
@@ -25,7 +25,7 @@
 	margin-bottom: 10px;
 }
 
-.LinksWrapper{
+.LinksWrapper {
 	display: flex;
 	justify-content: center;
 	flex-direction: row;
@@ -60,8 +60,9 @@
 
 .social-media-icon-wrapper {
 	display: flex;
-	width: 100%;
-	justify-content: flex-end;
+	width: 15%;
+	align-items: center;
+	justify-content: space-evenly;
 }
 
 .social-media-icon {
@@ -85,30 +86,88 @@
 	justify-content: space-between;
 }
 
+.icons {
+	display: flex;
+	width: 40%;
+	column-gap: 5px;
+}
 
-.icon-wrapper-facebook {
-	height: 80%;
-	width: 80%;
-	border-radius: 100px;
+.icon {
+	display: inline-flex;
+	width: 40px;
+	height: 40px;
+	text-decoration: none;
+	font-size: 26px;
+	color: #fff;
+	border-radius: 50%;
+	outline: 2px solid #fff;
+	transition-property: outline-offset, outline-color, background-color;
+	transition-duration: 0.25s;
+}
 
+.icon:hover {
+	outline-offset: 4px;
 }
-.icon-wrapper-facebook:hover {
-	height: 100%;
-	width: 100%;
+
+.icon i {
+	margin: auto;
 }
-.icon-wrapper-instagram{
-	height: 65%;
-	width: 65%;
+
+.icon:hover i {
+	animation: shake 0.25s;
 }
-.icon-wrapper-instagram:hover{
-	height: 75%;
-	width: 75%;
+
+.icon--instagram {
+	background-image: radial-gradient(circle at 30% 107%,
+			#fdf497 0%,
+			#fdf497 5%,
+			#fd5949 45%,
+			#d6249f 60%,
+			#285aeb 90%);
 }
-.icon-wrapper-youtube{
-	height: 100%;
-	width: 120%;
+
+.icon--instagram:hover {
+	background-image: radial-gradient(circle at 30% 107%,
+			#fdf497 0%,
+			#fdf497 5%,
+			#fd5949 45%,
+			#d6249f 60%,
+			#285aeb 90%);
+	outline-color: #a02d76;
 }
-.icon-wrapper-youtube:hover{
-	height: 130%;
-	width: 150%;
+
+.icon--facebook {
+	background-color: #3B5998;
+}
+
+.icon--facebook:hover {
+	background-color: #3B5998;
+	outline-color: #3B5998;
+}
+
+.icon--youtube {
+	background-color: #f03e3b;
+}
+
+.icon--youtube:hover {
+	background-color: #f03e3b;
+	outline-color: #f03e3b;
+}
+
+@keyframes shake {
+	10% {
+		transform: rotate(15deg);
+	}
+
+	20% {
+		transform: rotate(-15deg);
+	}
+
+	30% {
+		transform: rotate(15deg);
+	}
+
+	40% {
+		transform: rotate(-15deg);
+	}
 }

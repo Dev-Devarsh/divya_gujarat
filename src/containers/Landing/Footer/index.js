@@ -27,9 +27,15 @@ const Footer = () => {
             </div>
 
             <div className="social-media-icon-wrapper">
-              <center className="social-media-icon"> <img src={faceBook} alt="logo" className="icon-wrapper-facebook" /> </center>
-              <center className="social-media-icon"> <img src={instagram} alt="logo" className="icon-wrapper-instagram" /> </center>
-              <center className="social-media-icon"> <img src={youTube} alt="logo" className="icon-wrapper-youtube" /> </center>
+              <a href="#" class="icon icon--instagram">
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a href="#" class="icon icon--facebook">
+                <i class="ri-facebook-line"></i>
+              </a>
+              <a href="#" class="icon icon--youtube">
+                <i class="ri-youtube-line"></i>
+              </a>
             </div>
 
           </div>
