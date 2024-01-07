@@ -7,48 +7,60 @@ import Loading from '../../loader/loader';
 import Col from 'antd/es/grid/col';
 
 
-const News = () => {
+const News = (props: { isMobile: boolean, width: number }) => {
     const { data: news, isLoading } = useNewsDataQuery('');
 
     return (
         isLoading ?
             <Loading />
             :
-        <div className='content-main'>
-            <Col>
-            <div className="left-ad">Left Ad</div>
-            <div className="left-ad">Left Ad</div>
-            <div className="left-ad">Left Ad</div>
-            </Col>
-              <div className='news-wrapper'>
+            <div className='content-main'>
                 {
-                    news?.articles.map((e: { urlToImage: string | undefined; title: string | null | undefined; content: string | null | undefined; author: string | null | undefined; }) => {
-                        const altImage = "https://image-cdn.essentiallysports.com/wp-content/uploads/mrbeast-1-23-560x315.jpg";
-                        return (
-                            <div className="card">
-                                <img className="img" src={e?.urlToImage} alt={altImage} />
-                                <div className="title"> {e?.title} </div>
-                                <div className="description"> {e?.content} </div>
-                                <div className="source-writter">
-                                    <div style={{ fontWeight: 700, fontSize: 15 }}> Source :</div>
-                                    <div style={{ fontWeight: 300, fontSize: 15 }}> {e?.author} </div>
-                                </div>
-                            </div>
+                    props.isMobile ?
+                        <></>
+                        :
 
-                        )
-                    })
+                        <div className='ad-column'>
+                            <div className="left-ad">Left Ad</div>
+                            <div className="left-ad">Left Ad</div>
+                            <div className="left-ad">Left Ad</div>
+                        </div>
                 }
+                <div className={props.isMobile ? 'news-wrapper-mobile' : props.width <= 910 ? "news-wrapper-small-desktop" : 'news-wrapper-desktop'}>
+                    {
+                        news?.articles.map((e: { urlToImage: string | undefined; title: string | null | undefined; content: string | null | undefined; author: string | null | undefined; }) => {
+                            const altImage = "https://image-cdn.essentiallysports.com/wp-content/uploads/mrbeast-1-23-560x315.jpg";
+                            return (
+                                <div className="card">
+                                    <img className="img" src={e?.urlToImage} alt={altImage} />
+                                    <div className="title"> {e?.title} </div>
+                                    <div className="description"> {e?.content} </div>
+                                    <div className="source-writter">
+                                        <div style={{ fontWeight: 700, fontSize: 15 }}> Source :</div>
+                                        <div style={{ fontWeight: 300, fontSize: 15 }}> {e?.author} </div>
+                                    </div>
+                                </div>
+
+                            )
+                        })
+                    }
+                </div>
+                {
+                    props.isMobile
+                        ?
+                        <></>
+                        :
+                        <div className='ad-column'>
+                            <div className="right-ad">Right Ad</div>
+                            <div className="right-ad">Right Ad</div>
+                            <div className="right-ad">Right Ad</div>
+
+                        </div>
+                }
+
+
+
             </div>
-            <Col>
-            <div className="right-ad">Right Ad</div>
-            <div className="right-ad">Right Ad</div>
-            <div className="right-ad">Right Ad</div>
-            
-            </Col>
-        
-
-
-        </div>
 
 
     )

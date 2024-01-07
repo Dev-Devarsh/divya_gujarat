@@ -1,18 +1,23 @@
 .navbar {
-  background: #afaffcb5;
+  background: #e8d8f7;
   width: 100%;
+  position: sticky;
+  top: 0;
   height: 60px;
-  border-end-end-radius: 25px;
-  border-end-start-radius: 25px;
-  display: inline-flex;
+  border-end-end-radius: 15px;
+  border-end-start-radius: 15px;
+  display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 1;
+  overflow-x: scroll;
+    overflow: hidden;
+      /* Hide scrollbars */
   box-shadow: 0px -5px 25px 10px #717472dd;
-  /* box-shadow: 50px 20px 100px ; */
 }
 
 .toggle {
-  background-color: rgba(240, 234, 234, 0.914);
+  background-color: #e8d8f7;
 }
 
 .navLink-wrapper {
@@ -44,22 +49,19 @@
   display: inline-flex;
   justify-content: center;
   font-size: 15px;
-  background-color: #e9e9fe;
+  background-color: #e8d8f7;
   font-weight: 500;
-  border-radius: 20px;
+  border-radius: 100px;
   text-decoration: none;
   height: 35px;
   padding-inline: 15px;
-  border-width: 2px;
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.371);
   cursor: default;
 }
 
 .sigin-in-btn:hover {
   font-size: 16px;
   font-weight: 700;
-  color: black;
+  background-color: white;
 }
 
 .center {

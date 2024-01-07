@@ -13,7 +13,7 @@ export default function useDevice() {
         height: window.screen.height,
       });
     }
-   
+
     window.addEventListener("resize", handleResize);
 
     handleResize();
@@ -21,7 +21,10 @@ export default function useDevice() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const isMobile = useMemo(() => windowSize.width <= 575, [windowSize.width]);
+  const isMobile: boolean = useMemo(
+    () => windowSize.width <= 575,
+    [windowSize.width]
+  );
 
   return {
     isMobile,

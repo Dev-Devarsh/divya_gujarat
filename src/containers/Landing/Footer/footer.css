@@ -1,13 +1,15 @@
 .footer-wapper-web {
-	position: absolute;
+	position: relative;
 	height: 15%;
 	width: 100%;
+	bottom: 0;
+	display: block;
 	padding-top: 30px;
 	border-top-left-radius: 30px;
 	border-top-right-radius: 30px;
 	align-items: center;
 	justify-content: center;
-	background: #afaffcb5;
+	background: #f1e0fe;
 	box-shadow: 0px -5px 25px 10px #7174728e;
 }
 
@@ -15,7 +17,7 @@
 	display: inline-flex;
 	height: 40px;
 	width: 370px;
-	background-color: #e9e9fe;
+	background-color: #f1e0fe;
 	border-radius: 50px;
 	border-width: 2px;
 	border-style: solid;
@@ -37,14 +39,11 @@
 	color: black;
 	height: 40px;
 	width: 120px;
-	background-color: #e9e9fe;
+	background-color: #f1e0fe;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin-left: 12px;
-	border-color: rgba(0, 0, 0, 0.371);
-	border-width: 2px;
-	border-style: solid;
 	border-radius: 30px;
 	font-weight: 500;
 }
@@ -53,6 +52,7 @@
 .footer-link:hover {
 	cursor: default;
 	color: black;
+	background-color: #fff;
 	font-weight: 700;
 	transition: 200ms ease-in;
 }
@@ -66,7 +66,7 @@
 }
 
 .social-media-icon {
-	background-color: #e9e9fe;
+	background-color: #f1e0fe;
 	height: 50px;
 	border-width: 2px;
 	border-style: solid;

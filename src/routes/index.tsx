@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import Landing from "../containers/Landing";
+import Landing from "../containers/Landing/index";
 
 const AppRoutes = () => {
   return (
